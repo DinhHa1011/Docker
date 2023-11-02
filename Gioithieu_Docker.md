@@ -15,6 +15,7 @@
   - Nhưng nó cũng có một số nhược điểm về tính an toàn, do dùng chung OS nên nếu có bất kỳ lỗ hổng nào đó ở kernel thì nó sẽ ảnh hưởng tới tất cả các container có trong host đó. Và còn một vẫn đề nữa, nếu một ứng dụng nào đó trong container có được quyền superuser thì sẽ khác nguy hiểm.
 ## 2. Container && VM
 ![image](https://github.com/DinhHa1011/Docker/assets/119484840/6d795960-6fa5-4fb2-8275-6a4b6556eccf)
+
 | --- | VMWare | Container |
 | Cấu trúc ảo hóa | Sử dụng ảo hóa cấp độ máy ảo (VM-level virtualization), trong đó mỗi máy ảo chạy một hệ điều hành độc lập trên một hypervisor | Sử dụng ảo hóa cấp độ hệ điều hành (OS-level virtualization), chia sẻ hạt nhân (kernel) của hệ điề hành máy chủ và cung cấp một môi trường cô lập để chạy ứng dụng |
 | Tài nguyên | VMware cung cấp một máy ảo đầy đủ với tài nguyên phần cứng được cấu hình trước như bộ nhớ, CPU, đĩa cứng và giao diện mạng | container chia sẻ tài nguyên vật lý của máy chủ và chỉ sử dụng những tài nguyên cần thiết để chạy ứng dụng, làm cho chúng nhẹ nhàng hơn và có khả năng chạy nhiều hơn trên một máy chủ |
