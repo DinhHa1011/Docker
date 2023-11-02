@@ -18,7 +18,7 @@
 
 | --- | VMWare | Container |
 | --- | ------ | --------- |
-| Cấu trúc ảo hóa | Sử dụng ảo hóa cấp độ máy ảo (VM-level virtualization), trong đó mỗi máy ảo chạy một hệ điều hành độc lập trên một hypervisor | Sử dụng ảo hóa cấp độ hệ điều hành (OS-level virtualization), chia sẻ hạt nhân (kernel) của hệ điề hành máy chủ và cung cấp một môi trường cô lập để chạy ứng dụng |
+| Cấu trúc ảo hóa | Sử dụng ảo hóa cấp độ máy ảo (VM-level virtualization), trong đó mỗi máy ảo chạy một hệ điều hành độc lập trên một hypervisor | Sử dụng ảo hóa cấp độ hệ điều hành (OS-level virtualization), chia sẻ kernel của hệ điề hành máy chủ và cung cấp một môi trường cô lập để chạy ứng dụng |
 | Tài nguyên | VMware cung cấp một máy ảo đầy đủ với tài nguyên phần cứng được cấu hình trước như bộ nhớ, CPU, đĩa cứng và giao diện mạng | container chia sẻ tài nguyên vật lý của máy chủ và chỉ sử dụng những tài nguyên cần thiết để chạy ứng dụng, làm cho chúng nhẹ nhàng hơn và có khả năng chạy nhiều hơn trên một máy chủ |
 | Khởi động và thời gian chạy | thường mất thời gian lâu hơn để khởi động và chạy do cần khởi động một hệ điều hành đầy đủ | khởi động nhanh hơn vì chúng sử dụng hạt nhân của hệ điều hành máy chủ và chia sẻ các thư viện và tài nguyên hệ thống |
 | Quản lý và triển khai | cung cấp một hệ thống quản lý tập trung (vCenter) để quản lý máy ảo và tài nguyên trong môi trường ảo hóa | có thể được quản lý và triển khai bằng Docker hoặc các công cụ quản lý container khác như Kubernetes, và chúng thích hợp cho triển khai ứng dụng phân tán và có khả năng mở rộng |
